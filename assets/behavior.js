@@ -33,11 +33,11 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
-        "sourcePath": "/home/genius/dev/js/js-string/js/src/dummy.js",
-        "projectPath": "js/src/dummy.js",
-        "targetPath": "dummy",
-        "pageTitle": "dummy",
-        "title": "dummy"
+        "sourcePath": "/home/genius/dev/js/js-string/js/src/palyndrom.js",
+        "projectPath": "js/src/palyndrom.js",
+        "targetPath": "palyndrom",
+        "pageTitle": "palyndrom",
+        "title": "palyndrom"
       },
       "depth": 1,
       "outline": []
