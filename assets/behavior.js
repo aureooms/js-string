@@ -33,11 +33,91 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
-        "sourcePath": "/home/genius/dev/js/js-string/js/src/palyndrom.js",
-        "projectPath": "js/src/palyndrom.js",
-        "targetPath": "palyndrom",
-        "pageTitle": "palyndrom",
-        "title": "palyndrom"
+        "sourcePath": "/home/genius/dev/js/js-string/js/src/fill.js",
+        "projectPath": "js/src/fill.js",
+        "targetPath": "fill",
+        "pageTitle": "fill",
+        "title": "fill"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-string/js/src/lempelziv.js",
+        "projectPath": "js/src/lempelziv.js",
+        "targetPath": "lempelziv",
+        "pageTitle": "lempelziv",
+        "title": "lempelziv"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-string/js/src/palindrome.js",
+        "projectPath": "js/src/palindrome.js",
+        "targetPath": "palindrome",
+        "pageTitle": "palindrome",
+        "title": "palindrome"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-string/js/src/strmul.js",
+        "projectPath": "js/src/strmul.js",
+        "targetPath": "strmul",
+        "pageTitle": "strmul",
+        "title": "strmul"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-string/js/src/trie.js",
+        "projectPath": "js/src/trie.js",
+        "targetPath": "trie",
+        "pageTitle": "trie",
+        "title": "trie"
       },
       "depth": 1,
       "outline": []
