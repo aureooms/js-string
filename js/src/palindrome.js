@@ -1,6 +1,6 @@
 
 
-var palyndrom = function ( s, i, j ) {
+var palindrome = function ( s, i, j ) {
 
 	var m, n, k;
 
@@ -17,4 +17,4 @@ var palyndrom = function ( s, i, j ) {
 
 }
 
-exports.palyndrom = palyndrom;
+exports.palindrome = palindrome;

@@ -8,10 +8,10 @@ var check = function(input){
 
 	test('string.lempelziv', function(assert){
 
-		var Trie = algo.simpletrie_t(256, function(key, i){ return key.charCodeAt(i); });
+		var Trie = string.simpletrie_t(256, function(key, i){ return key.charCodeAt(i); });
 
 
-		var lempelziv = algo.lempelziv_t(Trie, '\0');
+		var lempelziv = string.lempelziv_t(Trie, '\0');
 
 		var index = [], suffix = [];
 
@@ -27,8 +27,8 @@ var check = function(input){
 
 
 var INP = [
-	algo.strmul('GZYAGZUAYZGUAYZFAAFAFTAZFTAFZTAFTZFATFA', 4),
-	algo.strmul('B', 81),
+	string.strmul('GZYAGZUAYZGUAYZFAAFAFTAZFTAFZTAFTZFATFA', 4),
+	string.strmul('B', 81),
 	''
 ];
 

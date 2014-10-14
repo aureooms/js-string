@@ -8,8 +8,8 @@ test('string.simpletrie_t', function(assert){
 		'' : 42,
 		'è!éèçé!èç!"§éç§É!"!É"' : 'feed-the-test',
 	};
-	
-	var Trie = algo.simpletrie_t(256, function(key, i){ return key.charCodeAt(i); });
+
+	var Trie = string.simpletrie_t(256, function(key, i){ return key.charCodeAt(i); });
 
 	var t = new Trie(), key, e = t.empty(), i, len, pt;
 
