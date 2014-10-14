@@ -1,7 +1,7 @@
 {
 	"name": "aureooms-js-string",
 	"main": "js/dist/string.js",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"ignore": [
 		"js/index.js",
 		"js/src",
