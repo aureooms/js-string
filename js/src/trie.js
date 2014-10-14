@@ -8,7 +8,7 @@
  * @param {natural} code code function
  */
 
-var simpletrie_t = function(degree, code){
+var __simpletrie__ = function(degree, code){
 
 
 	var Node = function(val){
@@ -66,4 +66,4 @@ var simpletrie_t = function(degree, code){
 
 };
 
-exports.simpletrie_t = simpletrie_t;
+exports.__simpletrie__ = __simpletrie__;

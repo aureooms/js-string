@@ -4,16 +4,16 @@
  * Simple lempelziv data compression algorithm implementation.
  */
 
-var lempelziv_t = function(Trie, end){
+var __lempelziv__ = function ( Trie, end ) {
 
 	var lempelziv = {};
 
-	lempelziv.encode = function(input, index, suffix){
+	lempelziv.encode = function ( input, index, suffix ) {
 		var j = 0;
-		var tree = new Trie(), e = tree.empty(), pt = e, tmp;
+		var trie = new Trie(), e = trie.empty(), pt = e, tmp;
 		var i = 0, len = input.length;
 
-		tree.put('', 0);
+		trie.put('', 0);
 
 		for (; i < len; ++i) {
 
@@ -37,7 +37,7 @@ var lempelziv_t = function(Trie, end){
 		suffix.push(end);
 	};
 
-	lempelziv.decode = function(index, suffix){
+	lempelziv.decode = function ( index, suffix ) {
 		var table = [[0, 0]], output = '';
 		var i = 0, len = index.length, j, c, k, l, w;
 
@@ -64,4 +64,4 @@ var lempelziv_t = function(Trie, end){
 };
 
 
-exports.lempelziv_t = lempelziv_t;
+exports.__lempelziv__ = __lempelziv__;

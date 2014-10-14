@@ -3,35 +3,52 @@
 	'use strict';
 
 
+/* js/src/code.js */
+
+
+var __code__ = function ( offset ) {
+
+	var code = function ( key, i ) {
+		return key.charCodeAt( i ) - offset;
+	};
+
+	return code;
+
+};
+
+
+exports.__code__ = __code__;
+
 /* js/src/fill.js */
 
 
-var lfill_t = function(c, n, mul){
+var __lfill__ = function ( c, n, mul ) {
 
 
-	var f = mul(c, n);
+	var f = mul( c, n );
 
-	return function(s){
-		return (f + s).slice(-n);
+	return function ( s ) {
+		return ( f + s ).slice( -n );
 	};
 
 };
 
 
 
-var rfill_t = function(c, n, mul){
+var __rfill__ = function( c, n, mul ){
 
 
-	var f = mul(c, n);
+	var f = mul( c, n );
 
-	return function(s){
-		return (s + f).slice(0, n);
+	return function ( s ) {
+		return ( s + f ).slice( 0, n );
 	};
 
 };
 
-exports.lfill_t = lfill_t;
-exports.rfill_t = rfill_t;
+exports.__lfill__ = __lfill__;
+exports.__rfill__ = __rfill__;
+
 /* js/src/lempelziv.js */
 
 
@@ -39,16 +56,16 @@ exports.rfill_t = rfill_t;
  * Simple lempelziv data compression algorithm implementation.
  */
 
-var lempelziv_t = function(Trie, end){
+var __lempelziv__ = function ( Trie, end ) {
 
 	var lempelziv = {};
 
-	lempelziv.encode = function(input, index, suffix){
+	lempelziv.encode = function ( input, index, suffix ) {
 		var j = 0;
-		var tree = new Trie(), e = tree.empty(), pt = e, tmp;
+		var trie = new Trie(), e = trie.empty(), pt = e, tmp;
 		var i = 0, len = input.length;
 
-		tree.put('', 0);
+		trie.put('', 0);
 
 		for (; i < len; ++i) {
 
@@ -72,7 +89,7 @@ var lempelziv_t = function(Trie, end){
 		suffix.push(end);
 	};
 
-	lempelziv.decode = function(index, suffix){
+	lempelziv.decode = function ( index, suffix ) {
 		var table = [[0, 0]], output = '';
 		var i = 0, len = index.length, j, c, k, l, w;
 
@@ -99,7 +116,25 @@ var lempelziv_t = function(Trie, end){
 };
 
 
-exports.lempelziv_t = lempelziv_t;
+exports.__lempelziv__ = __lempelziv__;
+
+/* js/src/mul.js */
+
+
+var mul = function ( s, n ) {
+	var a;
+
+	a = new Array(n);
+
+	while ( n-- ) {
+		a[n] = s;
+	}
+
+	return a.join('');
+};
+
+exports.mul = mul;
+
 /* js/src/palindrome.js */
 
 
@@ -122,16 +157,6 @@ var palindrome = function ( s, i, j ) {
 
 exports.palindrome = palindrome;
 
-/* js/src/strmul.js */
-
-
-var strmul = function(s, len){
-	var a = new Array(len);
-	while(len--) a[len] = s;
-	return a.join('');
-};
-
-exports.strmul = strmul;
 /* js/src/trie.js */
 
 /**
@@ -143,7 +168,7 @@ exports.strmul = strmul;
  * @param {natural} code code function
  */
 
-var simpletrie_t = function(degree, code){
+var __simpletrie__ = function(degree, code){
 
 
 	var Node = function(val){
@@ -201,6 +226,6 @@ var simpletrie_t = function(degree, code){
 
 };
 
-exports.simpletrie_t = simpletrie_t;
+exports.__simpletrie__ = __simpletrie__;
 
 })(typeof exports === 'undefined' ? this['string'] = {} : exports);

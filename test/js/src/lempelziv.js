@@ -3,15 +3,14 @@ var util = require('util');
 var fmt = util.format;
 
 
-var check = function(input){
+var check = function( input ){
 	var title = fmt('string.lempelziv : %s', input);
 
 	test('string.lempelziv', function(assert){
 
-		var Trie = string.simpletrie_t(256, function(key, i){ return key.charCodeAt(i); });
+		var Trie = string.__simpletrie__( degree, string.__code__( offset ) );
 
-
-		var lempelziv = string.lempelziv_t(Trie, '\0');
+		var lempelziv = string.__lempelziv__( Trie, end );
 
 		var index = [], suffix = [];
 
@@ -19,16 +18,22 @@ var check = function(input){
 
 		var decoded = lempelziv.decode(index, suffix);
 
-
 		deepEqual(decoded, input, 'decoded message must be the same as input');
 
 	});
 };
 
 
+
+var offset = 65;
+
+var degree = 256 - offset;
+
+var end = '\0';
+
 var INP = [
-	string.strmul('GZYAGZUAYZGUAYZFAAFAFTAZFTAFZTAFTZFATFA', 4),
-	string.strmul('B', 81),
+	string.mul('GZYAGZUAYZGUAYZFAAFAFTAZFTAFZTAFTZFATFA', 4),
+	string.mul('B', 81),
 	''
 ];
 
