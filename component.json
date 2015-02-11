@@ -1,0 +1,11 @@
+{
+	"description": "character sequence code bricks for JavaScript",
+	"version": "0.0.3",
+	"repo": "aureooms/js-string",
+	"scripts": [
+		"js/dist/string.js"
+	],
+	"name": "aureooms-js-string",
+	"license": "AGPL-3.0",
+	"main": "js/dist/string.js"
+}
