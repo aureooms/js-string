@@ -13,7 +13,7 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "commentsOnly": true,
           "name": "Markdown"
         },
-        "sourcePath": "/home/genius/dev/js/js-string/README.md",
+        "sourcePath": "/home/aureooms/dev/js/js-string/README.md",
         "projectPath": "README.md",
         "targetPath": "index",
         "pageTitle": "index",
@@ -33,7 +33,27 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
-        "sourcePath": "/home/genius/dev/js/js-string/js/src/fill.js",
+        "sourcePath": "/home/aureooms/dev/js/js-string/js/src/code.js",
+        "projectPath": "js/src/code.js",
+        "targetPath": "code",
+        "pageTitle": "code",
+        "title": "code"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/aureooms/dev/js/js-string/js/src/fill.js",
         "projectPath": "js/src/fill.js",
         "targetPath": "fill",
         "pageTitle": "fill",
@@ -53,7 +73,7 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
-        "sourcePath": "/home/genius/dev/js/js-string/js/src/lempelziv.js",
+        "sourcePath": "/home/aureooms/dev/js/js-string/js/src/lempelziv.js",
         "projectPath": "js/src/lempelziv.js",
         "targetPath": "lempelziv",
         "pageTitle": "lempelziv",
@@ -73,7 +93,27 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
-        "sourcePath": "/home/genius/dev/js/js-string/js/src/palindrome.js",
+        "sourcePath": "/home/aureooms/dev/js/js-string/js/src/mul.js",
+        "projectPath": "js/src/mul.js",
+        "targetPath": "mul",
+        "pageTitle": "mul",
+        "title": "mul"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/aureooms/dev/js/js-string/js/src/palindrome.js",
         "projectPath": "js/src/palindrome.js",
         "targetPath": "palindrome",
         "pageTitle": "palindrome",
@@ -93,27 +133,7 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
-        "sourcePath": "/home/genius/dev/js/js-string/js/src/strmul.js",
-        "projectPath": "js/src/strmul.js",
-        "targetPath": "strmul",
-        "pageTitle": "strmul",
-        "title": "strmul"
-      },
-      "depth": 1,
-      "outline": []
-    }, {
-      "type": "file",
-      "data": {
-        "language": {
-          "nameMatchers": [".js"],
-          "pygmentsLexer": "javascript",
-          "multiLineComment": ["/*", "*", "*/"],
-          "singleLineComment": ["//"],
-          "ignorePrefix": "}",
-          "foldPrefix": "^",
-          "name": "JavaScript"
-        },
-        "sourcePath": "/home/genius/dev/js/js-string/js/src/trie.js",
+        "sourcePath": "/home/aureooms/dev/js/js-string/js/src/trie.js",
         "projectPath": "js/src/trie.js",
         "targetPath": "trie",
         "pageTitle": "trie",
@@ -345,7 +365,7 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
       if (metaInfo.documentPath === 'index') {
         sourceURL = metaInfo.githubURL;
       } else {
-        sourceURL = "" + metaInfo.githubURL + "/blob/master/" + metaInfo.projectPath;
+        sourceURL = metaInfo.githubURL + "/blob/master/" + metaInfo.projectPath;
       }
       nav$.find('.tools').prepend("<li class=\"github\">\n  <a href=\"" + sourceURL + "\" title=\"View source on GitHub\">\n    View source on GitHub\n  </a>\n</li>");
     }
