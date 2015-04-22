@@ -20,7 +20,7 @@
 	},
 	"name": "aureooms-js-string",
 	"main": "js/dist/string.js",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"scripts": {
 		"doc": "./node_modules/.bin/groc",
 		"build": "./node_modules/.bin/aureooms-node-package-build",
