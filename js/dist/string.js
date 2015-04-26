@@ -138,24 +138,15 @@ exports.mul = mul;
 /* js/src/palindrome.js */
 
 
-var palindrome = function ( s, i, j ) {
+var palindrome = function ( s , i , j ) {
 
-	var m, n, k;
+	while ( i < j ) if ( s[i++] !== s[--j] ) return false ;
 
-	n = j - i;
-	m = Math.floor( n / 2 );
+	return true ;
 
-	for ( k = 0 ; k < m ; ++k ) {
-		if ( s[i + k] !== s[j - k - 1] ) {
-			return false;
-		}
-	}
+} ;
 
-	return true;
-
-}
-
-exports.palindrome = palindrome;
+exports.palindrome = palindrome ;
 
 /* js/src/trie.js */
 
