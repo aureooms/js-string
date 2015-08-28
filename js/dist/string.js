@@ -1,6 +1,8 @@
-(function(exports, undefined){
+( function ( ) {
 
-	'use strict';
+'use strict' ;
+
+var definition = function ( exports , undefined ) {
 
 
 /* js/src/code.js */
@@ -18,6 +20,16 @@ var __code__ = function ( offset ) {
 
 
 exports.__code__ = __code__;
+
+/* js/src/concat.js */
+
+var concat = function ( strings ) {
+
+	return join( strings , '' ) ;
+
+} ;
+
+exports.concat = concat ;
 
 /* js/src/fill.js */
 
@@ -48,6 +60,16 @@ var __rfill__ = function( c, n, mul ){
 
 exports.__lfill__ = __lfill__;
 exports.__rfill__ = __rfill__;
+
+/* js/src/join.js */
+
+var join = function ( strings , sep ) {
+
+	return strings.join( sep ) ;
+
+} ;
+
+exports.join = join ;
 
 /* js/src/lempelziv.js */
 
@@ -122,15 +144,12 @@ exports.__lempelziv__ = __lempelziv__;
 
 
 var mul = function ( s, n ) {
-	var a;
 
-	a = new Array(n);
+	var copies = new Array(n);
 
-	while ( n-- ) {
-		a[n] = s;
-	}
+	while ( n-- ) copies[n] = s ;
 
-	return a.join('');
+	return concat( copies ) ;
 };
 
 exports.mul = mul;
@@ -219,4 +238,16 @@ var __simpletrie__ = function(degree, code){
 
 exports.__simpletrie__ = __simpletrie__;
 
-})(typeof exports === 'undefined' ? this['string'] = {} : exports);
+return exports ;
+} ;
+if ( typeof exports === "object" ) {
+	definition( exports ) ;
+}
+else if ( typeof define === "function" && define.amd ) {
+	define( "aureooms-js-string" , [ ] , function ( ) { return definition( { } ) ; } ) ;
+}
+else if ( typeof window === "object" && typeof window.document === "object" ) {
+	definition( window["string"] = { } ) ;
+}
+else console.error( "unable to detect type of module to define for aureooms-js-string") ;
+} )( ) ;

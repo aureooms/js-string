@@ -1,15 +1,12 @@
 
 
 var mul = function ( s, n ) {
-	var a;
 
-	a = new Array(n);
+	var copies = new Array(n);
 
-	while ( n-- ) {
-		a[n] = s;
-	}
+	while ( n-- ) copies[n] = s ;
 
-	return a.join('');
+	return concat( copies ) ;
 };
 
 exports.mul = mul;

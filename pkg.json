@@ -1,5 +1,5 @@
 {
-	"ns": "string",
+	"name": "string",
 	"code": {
 		"main": [
 			"js",
