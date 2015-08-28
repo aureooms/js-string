@@ -1,34 +1,37 @@
 {
-	"homepage": "http://aureooms.github.io/js-string/",
-	"keywords": [
-		"bricks",
-		"char",
-		"character",
-		"javascript",
-		"js",
-		"sequence",
-		"string"
-	],
-	"license": "AGPL-3.0",
-	"author": "aureooms",
-	"repository": {
-		"url": "https://github.com/aureooms/js-string.git",
-		"type": "git"
-	},
-	"bugs": {
-		"url": "https://github.com/aureooms/js-string/issues"
-	},
-	"name": "aureooms-js-string",
-	"main": "js/dist/string.js",
-	"version": "0.0.6",
-	"scripts": {
-		"doc": "./node_modules/.bin/groc",
-		"build": "./node_modules/.bin/aureooms-node-package-build",
-		"test": "./node_modules/.bin/aureooms-node-package-test"
-	},
-	"description": "character sequence code bricks for JavaScript",
-	"dependencies": {},
-	"devDependencies": {
-		"aureooms-node-package": "^5.0.2"
-	}
+  "homepage": "http://aureooms.github.io/js-string/",
+  "keywords": [
+    "bricks",
+    "char",
+    "character",
+    "javascript",
+    "js",
+    "sequence",
+    "string"
+  ],
+  "license": "AGPL-3.0",
+  "author": "aureooms",
+  "repository": {
+    "url": "https://github.com/aureooms/js-string.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/aureooms/js-string/issues"
+  },
+  "name": "aureooms-js-string",
+  "main": "js/dist/string.js",
+  "version": "0.0.6",
+  "scripts": {
+    "doc": "./node_modules/.bin/groc",
+    "build": "./node_modules/.bin/aureooms-node-package-build",
+    "test": "./node_modules/.bin/aureooms-node-package-test"
+  },
+  "description": "character sequence code bricks for JavaScript",
+  "dependencies": {},
+  "devDependencies": {
+    "aureooms-node-package": "^5.0.2"
+  },
+  "spm": {
+    "main": "js/dist/string.js"
+  }
 }
