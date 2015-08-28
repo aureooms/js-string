@@ -1,6 +1,6 @@
 {
 	"description": "character sequence code bricks for JavaScript",
-	"version": "0.0.6",
+	"version": "0.1.0",
 	"repo": "aureooms/js-string",
 	"scripts": [
 		"js/dist/string.js"
