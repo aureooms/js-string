@@ -30,7 +30,7 @@
 	"description": "character sequence code bricks for JavaScript",
 	"dependencies": {},
 	"devDependencies": {
-		"aureooms-node-package": "^5.0.2"
+		"aureooms-node-package": "^6.0.1"
 	},
 	"spm": {
 		"main": "js/dist/string.js"
