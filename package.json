@@ -19,7 +19,7 @@
 	"bugs": {
 		"url": "https://github.com/aureooms/js-string/issues"
 	},
-	"name": "aureooms-js-string",
+	"name": "@aureooms/js-string",
 	"main": "js/dist/string.js",
 	"version": "0.2.0",
 	"scripts": {
