@@ -298,10 +298,10 @@
 	if (typeof exports === "object") {
 		definition(exports);
 	} else if (typeof define === "function" && define.amd) {
-		define("aureooms-js-string", [], function () {
+		define("@aureooms/js-string", [], function () {
 			return definition({});
 		});
 	} else if (typeof window === "object" && typeof window.document === "object") {
 		definition(window["string"] = {});
-	} else console.error("unable to detect type of module to define for aureooms-js-string");
+	} else console.error("unable to detect type of module to define for @aureooms/js-string");
 })();
