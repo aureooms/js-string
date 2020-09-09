@@ -1,4 +1,4 @@
-[@aureooms/js-string](https://aureooms.github.io/js-string)
+:symbols: [@aureooms/js-string](https://aureooms.github.io/js-string)
 ==
 
 character sequence code bricks for JavaScript
