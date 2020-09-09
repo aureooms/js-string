@@ -1,9 +1,11 @@
+import test from 'ava';
+import * as string from '../../src';
 
 function t ( s , sep , maxsplit , expected ) {
-	deepEqual( string.split( s , sep , maxsplit ) , expected , [ s , sep , maxsplit , expected ] ) ;
+	t.deepEqual( string.split( s , sep , maxsplit ) , expected , [ s , sep , maxsplit , expected ] ) ;
 }
 
-test( 'split' , function ( ) {
+test( 'split' , t => {
 
 	t( '1 2 3' , undefined , undefined , ['1', '2', '3'] ) ;
 	t( '1 2 3 4' , undefined , undefined , ['1', '2', '3', '4'] ) ;

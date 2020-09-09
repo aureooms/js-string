@@ -1,11 +1,13 @@
+import test from 'ava';
+import * as string from '../../src';
 
 
 var one = function ( s, v ) {
-	deepEqual( string.palindrome( s, 0, s.length ), v, s );
+	t.deepEqual( string.palindrome( s, 0, s.length ), v, s );
 };
 
 
-test( "palindrome", function () {
+test( "palindrome", t => {
 
 	one( "", true );
 	one( "Ö", true );
