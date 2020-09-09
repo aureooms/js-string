@@ -1,7 +1,2 @@
-
-export function join ( strings , sep ) {
-
-	return strings.join( sep ) ;
-
-}
-
+const join = (strings, sep) => strings.join(sep);
+export default join;

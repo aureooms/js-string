@@ -1,11 +1,7 @@
-import {concat} from './concat';
+import concat from './concat';
 
-export function mul ( s, n ) {
-
-	var copies = new Array(n);
-
+export default function mul ( s, n ) {
+	const copies = new Array(n);
 	while ( n-- ) copies[n] = s ;
-
 	return concat( copies ) ;
 }
-

@@ -1,8 +1,4 @@
-import {join} from './join';
+import join from './join';
 
-export function concat ( strings ) {
-
-	return join( strings , '' ) ;
-
-}
-
+const concat = (strings) => join(strings, '');
+export default concat;
