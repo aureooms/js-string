@@ -27,7 +27,8 @@
     "test": "ava",
     "esdoc": "esdoc",
     "lint": "true",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "cover": "nyc --reporter=lcov npm test"
   },
   "description": "character sequence code bricks for JavaScript",
   "dependencies": {},
