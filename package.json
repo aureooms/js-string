@@ -20,10 +20,10 @@
     "url": "https://github.com/aureooms/js-string/issues"
   },
   "name": "@aureooms/js-string",
-  "main": "js/dist/string.js",
+  "main": "lib/index.js",
   "version": "0.2.0",
   "scripts": {
-    "build": "./node_modules/.bin/aureooms-node-package-build",
+    "build": "babel --delete-dir-on-start --env-name production src -d lib",
     "test": "ava",
     "esdoc": "esdoc",
     "lint": "true"
