@@ -1,27 +1,22 @@
 import test from 'ava';
-import * as string from '../../src';
 
+import {palindrome} from '../../src';
 
-var one = function ( s, v ) {
-	t.deepEqual( string.palindrome( s, 0, s.length ), v, s );
+const macro = ( t, s, expected ) => {
+	t.is( expected, palindrome( s, 0, s.length ) );
 };
 
+macro.title = (title, s, expected) => title || expected ? `'${s}' is a palindrome` : `'${s}' is not a palindrome` ;
 
-test( "palindrome", t => {
+test(macro, "", true );
+test(macro, "Ö", true );
+test(macro, "x", true );
+test(macro, "xx", true );
+test(macro, "xyx", true );
+test(macro, "sator arepo tenet opera rotas", true );
 
-	one( "", true );
-	one( "Ö", true );
-	one( "x", true );
-	one( "xx", true );
-	one( "xyx", true );
-	one( "xyx", true );
-	one( "sator arepo tenet opera rotas", true );
-
-	one( "ab", false );
-	one( "abc", false );
-	one( "abca", false );
-	one( "sator arepo tenët opera rotas", false );
-	one( "Sator Arepo Tenet Opera Rotas", false );
-
-
-});
+test(macro, "ab", false );
+test(macro, "abc", false );
+test(macro, "abca", false );
+test(macro, "sator arepo tenët opera rotas", false );
+test(macro, "Sator Arepo Tenet Opera Rotas", false );

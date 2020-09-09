@@ -1,4 +1,4 @@
-
+import {concat} from './concat';
 
 export function mul ( s, n ) {
 

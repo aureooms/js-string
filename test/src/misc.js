@@ -1,6 +1,6 @@
 import test from 'ava';
 import * as string from '../../src';
-test('string', function(assert){
+test('string', t => {
 	var c = '7';
 	var n = 10;
 	var mul = string.mul;

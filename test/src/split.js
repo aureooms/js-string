@@ -1,29 +1,30 @@
 import test from 'ava';
-import * as string from '../../src';
+import {split} from '../../src';
 
-function t ( s , sep , maxsplit , expected ) {
-	t.deepEqual( string.split( s , sep , maxsplit ) , expected , [ s , sep , maxsplit , expected ] ) ;
+const macro = ( t, s , sep , maxsplit , expected ) => {
+	t.deepEqual( expected, split(s , sep , maxsplit ) ) ;
 }
 
-test( 'split' , t => {
+macro.title = (title, s, sep, maxsplit, expected) => `split(${s}, ${sep}, ${maxsplit}) === ${JSON.stringify(expected)}` ;
 
-	t( '1 2 3' , undefined , undefined , ['1', '2', '3'] ) ;
-	t( '1 2 3 4' , undefined , undefined , ['1', '2', '3', '4'] ) ;
-	t( '1 2 3' , undefined , 1 , ['1', '2 3'] ) ;
-	t( '   1   2   3   ' , undefined , undefined , ['1', '2', '3'] ) ;
-	t( '' , undefined , undefined , [ ] ) ;
-	t( '  \t\n  \t' , undefined , undefined , [ ] ) ;
+test(macro, '1 2 3' , undefined , undefined , ['1', '2', '3'] ) ;
+test(macro, '1 2 3 4' , undefined , undefined , ['1', '2', '3', '4'] ) ;
+test(macro, '1 2 3' , undefined , 1 , ['1', '2 3'] ) ;
+test(macro, '   1   2   3   ' , undefined , undefined , ['1', '2', '3'] ) ;
+test(macro, '' , undefined , undefined , [ ] ) ;
+test(macro, '  \t\n  \t' , undefined , undefined , [ ] ) ;
 
-	t( '1<>2<>3' , '<>' , undefined , ['1', '2', '3'] ) ;
-	t( '1,,2' , ',' , undefined , ['1', '', '2'] ) ;
+test(macro, '1<>2<>3' , '<>' , undefined , ['1', '2', '3'] ) ;
+test(macro, '1,,2' , ',' , undefined , ['1', '', '2'] ) ;
 
-	t( '1,2,3' , ',' , undefined , ['1', '2', '3'] ) ;
-	t( '1,2,3' , ',', 1 , ['1', '2,3'] ) ;
-	t( '1,2,,3,' , ',' , undefined , ['1', '2', '', '3', ''] ) ;
-	t( '' , ',' , undefined , [ '' ] ) ;
+test(macro, '1,2,3' , ',' , undefined , ['1', '2', '3'] ) ;
+test(macro, '1,2,3' , ',', 1 , ['1', '2,3'] ) ;
+test(macro, '1,2,,3,' , ',' , undefined , ['1', '2', '', '3', ''] ) ;
+test(macro, '' , ',' , undefined , [ '' ] ) ;
 
-	t( ',1,2,3,' , ',' , 10 , ['', '1', '2', '3', ''] ) ;
+test(macro, ',1,2,3,' , ',' , 10 , ['', '1', '2', '3', ''] ) ;
 
-	raises( string.split.bind( null , '123' , '' ) , /empty separator/ , 'emty sep raises' ) ;
 
-} ) ;
+test('empty sep throws' , t => {
+	t.throws( () => split('123' , '' ) , {message: /empty separator/} ) ;
+});

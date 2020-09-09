@@ -1,3 +1,4 @@
+import {join} from './join';
 
 export function concat ( strings ) {
 
