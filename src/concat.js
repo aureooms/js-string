@@ -1,8 +1,7 @@
 
-var concat = function ( strings ) {
+export function concat ( strings ) {
 
 	return join( strings , '' ) ;
 
-} ;
+}
 
-exports.concat = concat ;

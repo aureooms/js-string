@@ -1,7 +1,7 @@
 
-const WHITESPACE = /[\s]+/ ;
+export const WHITESPACE = /[\s]+/ ;
 
-const split = function ( string , sep = undefined , maxsplit = undefined ) {
+export function split ( string , sep = undefined , maxsplit = undefined ) {
 
 	if ( sep === '' ) throw new Error( 'empty separator' ) ;
 
@@ -59,6 +59,5 @@ const split = function ( string , sep = undefined , maxsplit = undefined ) {
 
 	}
 
-} ;
+}
 
-exports.split = split ;

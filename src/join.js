@@ -1,8 +1,7 @@
 
-var join = function ( strings , sep ) {
+export function join ( strings , sep ) {
 
 	return strings.join( sep ) ;
 
-} ;
+}
 
-exports.join = join ;

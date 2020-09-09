@@ -1,6 +1,6 @@
 
 
-var __code__ = function ( offset ) {
+export function __code__ ( offset ) {
 
 	var code = function ( key, i ) {
 		return key.charCodeAt( i ) - offset;
@@ -8,7 +8,6 @@ var __code__ = function ( offset ) {
 
 	return code;
 
-};
+}
 
 
-exports.__code__ = __code__;

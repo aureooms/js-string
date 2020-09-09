@@ -1,6 +1,6 @@
 
 
-var __lfill__ = function ( c, n, mul ) {
+export function __lfill__ ( c, n, mul ) {
 
 
 	var f = mul( c, n );
@@ -9,11 +9,11 @@ var __lfill__ = function ( c, n, mul ) {
 		return ( f + s ).slice( -n );
 	};
 
-};
+}
 
 
 
-var __rfill__ = function( c, n, mul ){
+export function __rfill__( c, n, mul ){
 
 
 	var f = mul( c, n );
@@ -22,7 +22,5 @@ var __rfill__ = function( c, n, mul ){
 		return ( s + f ).slice( 0, n );
 	};
 
-};
+}
 
-exports.__lfill__ = __lfill__;
-exports.__rfill__ = __rfill__;
