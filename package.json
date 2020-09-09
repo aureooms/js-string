@@ -26,7 +26,8 @@
     "build": "babel --delete-dir-on-start --env-name production src -d lib",
     "test": "ava",
     "esdoc": "esdoc",
-    "lint": "true"
+    "lint": "true",
+    "prepare": "npm run build"
   },
   "description": "character sequence code bricks for JavaScript",
   "dependencies": {},
