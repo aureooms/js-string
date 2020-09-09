@@ -23,9 +23,9 @@
   "main": "js/dist/string.js",
   "version": "0.2.0",
   "scripts": {
-    "doc": "./node_modules/.bin/groc",
     "build": "./node_modules/.bin/aureooms-node-package-build",
-    "test": "./node_modules/.bin/aureooms-node-package-test"
+    "test": "./node_modules/.bin/aureooms-node-package-test",
+    "esdoc": "esdoc"
   },
   "description": "character sequence code bricks for JavaScript",
   "dependencies": {},
