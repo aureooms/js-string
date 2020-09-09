@@ -1,7 +1,7 @@
 :symbols: [@aureooms/js-string](https://aureooms.github.io/js-string)
 ==
 
-character sequence code bricks for JavaScript
+String data structures and algorithms for JavaScript.
 
 [![License](https://img.shields.io/github/license/aureooms/js-string.svg)](https://raw.githubusercontent.com/aureooms/js-string/master/LICENSE)
 [![Version](https://img.shields.io/npm/v/@aureooms/js-string.svg)](https://www.npmjs.org/package/@aureooms/js-string)
