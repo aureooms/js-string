@@ -54,9 +54,6 @@
     "power-assert": "1.6.1",
     "regenerator-runtime": "0.13.7"
   },
-  "spm": {
-    "main": "js/dist/string.js"
-  },
   "babel": {
     "presets": [
       "@babel/preset-env"
